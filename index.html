@@ -1,0 +1,617 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet/less" href="style.less" />
+  </head>
+
+  <body>
+    <section class="dashboard__main__wrap">
+      <div class="dashboard__header">
+        <div class="header__logo">
+          <img src="./assets/img/logo.png" alt="" />
+          <div class="toggle-arrow">
+            <i class="bx bx-arrow-back"></i>
+          </div>
+        </div>
+        <div class="header-right-area">
+          <div class="header-right-left-search-bar">
+            <div class="search-bar">
+              <input type="text" placeholder="Search" />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="header__profile">
+            <ul>
+              <li>
+                <img src="./assets/img/country.png" alt="" />
+              </li>
+              <li>
+                <div class="dropdown">
+                  <span
+                    class="dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./assets/img/Notification.png" alt="" />
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <span
+                    class="dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./assets/img/Message.png" alt="" />
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <span
+                    class="dropdown-toggle profile-show"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./assets/img/profile.png" alt="" />
+                    <div class="profile-info">
+                      <h4>Austin Robertson</h4>
+                      <p>Marketing Administrator</p>
+                    </div>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard__main__body">
+        <!-- side navbar  -->
+        <nav class="side__bar">
+          <div class="nav-inner-single-part">
+            <h6>Home</h6>
+            <ul>
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.4"
+                        d="M16.0755 2H19.4615C20.8637 2 22 3.14585 22 4.55996V7.97452C22 9.38864 20.8637 10.5345 19.4615 10.5345H16.0755C14.6732 10.5345 13.537 9.38864 13.537 7.97452V4.55996C13.537 3.14585 14.6732 2 16.0755 2Z"
+                        fill="#8A92A6"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.4"
+                        d="M11.9912 19.1215L5.49945 22.3641C5.00921 22.6302 4.39768 22.4525 4.12348 21.9643C4.0434 21.8108 4.00106 21.6402 4 21.4668V14.2088C4 14.9284 4.40573 15.3726 5.47299 15.8701L11.9912 19.1215Z"
+                        fill="#8A92A6"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.89526 2.5H15.0695C17.7773 2.5 19.9735 3.56605 20 6.29337V21.4668C19.9989 21.6374 19.9565 21.8051 19.8765 21.9554C19.7479 22.2007 19.5259 22.3827 19.2615 22.4598C18.997 22.5368 18.7128 22.5023 18.4741 22.3641L11.9912 19.1215L5.47299 15.8701C4.40573 15.3726 4 14.9284 4 14.2088V6.29337C4 3.56605 6.19625 2.5 8.89526 2.5ZM8.22492 10.1223H15.7486C16.1822 10.1223 16.5336 9.76828 16.5336 9.33162C16.5336 8.89495 16.1822 8.54096 15.7486 8.54096H8.22492C7.79137 8.54096 7.43991 8.89495 7.43991 9.33162C7.43991 9.76828 7.79137 10.1223 8.22492 10.1223Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Workflow</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 3.5H19V1.5H17V3.5H7V1.5H5V3.5H4C2.9 3.5 2 4.4 2 5.5V21.5C2 22.6 2.9 23.5 4 23.5H20C21.1 23.5 22 22.6 22 21.5V5.5C22 4.4 21.1 3.5 20 3.5ZM20 21.5H4V8.5H20V21.5Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Calendar</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 5.72L17.4 1.86L16.11 3.39L20.71 7.25L22 5.72ZM7.88 3.39L6.6 1.86L2 5.71L3.29 7.24L7.88 3.39ZM12.5 8H11V14L15.75 16.85L16.5 15.62L12.5 13.25V8ZM12 4C7.03 4 3 8.03 3 13C3 17.97 7.02 22 12 22C16.97 22 21 17.97 21 13C21 8.03 16.97 4 12 4ZM12 20C8.13 20 5 16.87 5 13C5 9.13 8.13 6 12 6C15.87 6 19 9.13 19 13C19 16.87 15.87 20 12 20Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Time clock</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+            </ul>
+          </div>
+          <hr />
+          <div class="nav-inner-single-part">
+            <h6>Pages</h6>
+            <ul>
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 2H4C3 2 2 2.9 2 4V7.01C2 7.73 2.43 8.35 3 8.7V20C3 21.1 4.1 22 5 22H19C19.9 22 21 21.1 21 20V8.7C21.57 8.35 22 7.73 22 7.01V4C22 2.9 21 2 20 2ZM15 14H9V12H15V14ZM20 7H4V4L20 3.98V7Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Inventory</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11V9ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18ZM7.17 14.75L7.2 14.63L8.1 13H15.55C16.3 13 16.96 12.59 17.3 11.97L21.16 4.96L19.42 4H19.41L18.31 6L15.55 11H8.53L8.4 10.73L6.16 6L5.21 4L4.27 2H1V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.29 15 7.17 14.89 7.17 14.75Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Purchasing</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 5V19H5V5H19ZM20.1 3H3.9C3.4 3 3 3.4 3 3.9V20.1C3 20.5 3.4 21 3.9 21H20.1C20.5 21 21 20.5 21 20.1V3.9C21 3.4 20.5 3 20.1 3ZM11 7H17V9H11V7ZM11 11H17V13H11V11ZM11 15H17V17H11V15ZM7 7H9V9H7V7ZM7 11H9V13H7V11ZM7 15H9V17H7V15Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Lists</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.73 3H8.27L3 8.27V15.73L8.27 21H15.73L21 15.73V8.27L15.73 3ZM12 17.3C11.28 17.3 10.7 16.72 10.7 16C10.7 15.28 11.28 14.7 12 14.7C12.72 14.7 13.3 15.28 13.3 16C13.3 16.72 12.72 17.3 12 17.3ZM13 13H11V7H13V13Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Reports</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+              <!--single menu list  -->
+              <li>
+                <a href="#">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.14 12.94C19.18 12.64 19.2 12.33 19.2 12C19.2 11.68 19.18 11.36 19.13 11.06L21.16 9.48C21.34 9.34 21.39 9.07 21.28 8.87L19.36 5.55C19.24 5.33 18.99 5.26 18.77 5.33L16.38 6.29C15.88 5.91 15.35 5.59 14.76 5.35L14.4 2.81C14.36 2.57 14.16 2.4 13.92 2.4H10.08C9.83999 2.4 9.64999 2.57 9.60999 2.81L9.24999 5.35C8.65999 5.59 8.11999 5.92 7.62999 6.29L5.23999 5.33C5.01999 5.25 4.76999 5.33 4.64999 5.55L2.73999 8.87C2.61999 9.08 2.65999 9.34 2.85999 9.48L4.88999 11.06C4.83999 11.36 4.79999 11.69 4.79999 12C4.79999 12.31 4.81999 12.64 4.86999 12.94L2.83999 14.52C2.65999 14.66 2.60999 14.93 2.71999 15.13L4.63999 18.45C4.75999 18.67 5.00999 18.74 5.22999 18.67L7.61999 17.71C8.11999 18.09 8.64999 18.41 9.23999 18.65L9.59999 21.19C9.64999 21.43 9.83999 21.6 10.08 21.6H13.92C14.16 21.6 14.36 21.43 14.39 21.19L14.75 18.65C15.34 18.41 15.88 18.09 16.37 17.71L18.76 18.67C18.98 18.75 19.23 18.67 19.35 18.45L21.27 15.13C21.39 14.91 21.34 14.66 21.15 14.52L19.14 12.94ZM12 15.6C10.02 15.6 8.39999 13.98 8.39999 12C8.39999 10.02 10.02 8.4 12 8.4C13.98 8.4 15.6 10.02 15.6 12C15.6 13.98 13.98 15.6 12 15.6Z"
+                        fill="#8A92A6"
+                      />
+                    </svg>
+                  </span>
+                  <span>Setting</span>
+                </a>
+              </li>
+              <!--single menu list  -->
+            </ul>
+          </div>
+          <hr />
+        </nav>
+        <!-- side navbar  -->
+        <!-- main body  -->
+        <div class="dashboard__body">
+          <div class="report-top-main-wrap">
+            <div class="report-content">
+              <h2>Reports !</h2>
+              <p>Secondary header if necessary</p>
+            </div>
+          </div>
+          <div class="dashboard__content">
+            <div class="single-data-table">
+              <div class="data-table-header">
+                <h5>AVAILABLE DEVICES</h5>
+              </div>
+              <div class="data-table-main-content-wrap">
+                <div class="data-tablesearch-area">
+                  <div class="header-right-area">
+                    <div class="header__profile">
+                      <p>Column Visibility</p>
+                    </div>
+                    <div class="header-right-left-search-bar">
+                      <div class="search-bar">
+                        <input type="text" placeholder="Search" />
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="data-table-main-content">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          <input type="checkbox" />
+                        </th>
+                        <th scope="col">GW EVID</th>
+                        <th scope="col">GW Name</th>
+                        <th scope="col">Sensor Desc.</th>
+                        <th scope="col">Sensor EVID</th>
+                        <th scope="col">Sensor Model</th>
+                        <th scope="col">Sensor Name</th>
+                        <th scope="col">Sensor Serial</th>
+                        <th scope="col">Sensor TBCE ID</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                          <input type="checkbox" />
+                        </th>
+                        <td>00:30:00:00 00:01:0620</td>
+                        <td>David MTCAP 91529538535</td>
+                        <td>Wireless Sensor-Huidity Temp. Pressure</td>
+                        <td>00:80:00:00 00:00:09 BL</td>
+                        <td>WS HTOLO:</td>
+                        <td>Prestur Humidity sensor</td>
+                        <td>19065400</td>
+                        <td>3072200 2100-11e-acb7493176607</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input type="checkbox" />
+                        </th>
+                        <td>00:30:00:00 00:01:0620</td>
+                        <td>David MTCAP 91529538535</td>
+                        <td>Wireless Sensor-Huidity Temp. Pressure</td>
+                        <td>00:80:00:00 00:00:09 BL</td>
+                        <td>WS HTOLO:</td>
+                        <td>Prestur Humidity sensor</td>
+                        <td>19065400</td>
+                        <td>3072200 2100-11e-acb7493176607</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input type="checkbox" />
+                        </th>
+                        <td>00:30:00:00 00:01:0620</td>
+                        <td>David MTCAP 91529538535</td>
+                        <td>Wireless Sensor-Huidity Temp. Pressure</td>
+                        <td>00:80:00:00 00:00:09 BL</td>
+                        <td>WS HTOLO:</td>
+                        <td>Prestur Humidity sensor</td>
+                        <td>19065400</td>
+                        <td>3072200 2100-11e-acb7493176607</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input type="checkbox" />
+                        </th>
+                        <td>00:30:00:00 00:01:0620</td>
+                        <td>David MTCAP 91529538535</td>
+                        <td>Wireless Sensor-Huidity Temp. Pressure</td>
+                        <td>00:80:00:00 00:00:09 BL</td>
+                        <td>WS HTOLO:</td>
+                        <td>Prestur Humidity sensor</td>
+                        <td>19065400</td>
+                        <td>3072200 2100-11e-acb7493176607</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input type="checkbox" />
+                        </th>
+                        <td>00:30:00:00 00:01:0620</td>
+                        <td>David MTCAP 91529538535</td>
+                        <td>Wireless Sensor-Huidity Temp. Pressure</td>
+                        <td>00:80:00:00 00:00:09 BL</td>
+                        <td>WS HTOLO:</td>
+                        <td>Prestur Humidity sensor</td>
+                        <td>19065400</td>
+                        <td>3072200 2100-11e-acb7493176607</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <input type="checkbox" />
+                        </th>
+                        <td>00:30:00:00 00:01:0620</td>
+                        <td>David MTCAP 91529538535</td>
+                        <td>Wireless Sensor-Huidity Temp. Pressure</td>
+                        <td>00:80:00:00 00:00:09 BL</td>
+                        <td>WS HTOLO:</td>
+                        <td>Prestur Humidity sensor</td>
+                        <td>19065400</td>
+                        <td>3072200 2100-11e-acb7493176607</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table-data-bottom">
+                  <div class="table-data-bottom-left">
+                    <p>Showing 1 to 10 of 100 entries</p>
+                  </div>
+                  <div class="table-data-bottom-right">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-data-table">
+              <div class="data-table-header">
+                <h5>
+                  <span>History (Last 100)</span>
+
+                  <span class="data-table-inner-subtitle-header">
+                    WS HTOLO: 19065400
+                  </span>
+                </h5>
+              </div>
+              <div class="data-table-main-content-wrap">
+                <div class="data-tablesearch-area">
+                  <div class="header-right-area">
+                    <div class="header__profile data-history">
+                      <p>Column Visibility</p>
+                      <p>Copy</p>
+                      <p>CSV</p>
+                      <p>Excel</p>
+                      <p>PDF</p>
+                      <p>Print</p>
+                    </div>
+                    <div class="header-right-left-search-bar">
+                      <div class="search-bar">
+                        <input type="text" placeholder="Search" />
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-right-area">
+                    <div class="table-data-bottom-left">
+                      <p>Showing 1 to 10 of 100 entries</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="data-table-main-content">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">TS</th>
+                        <th scope="col">Batt voltage</th>
+                        <th scope="col">codr</th>
+                        <th scope="col">Humidity</th>
+                        <th scope="col">Humidity_temp</th>
+                        <th scope="col">Lsnr</th>
+                        <th scope="col">Rasi</th>
+                        <th scope="col">Temperature</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>00:30:00:00 00:01:0620</td>
+                        <td>David MTCAP 91529538535</td>
+                        <td>Wireless Sensor-Huidity Temp. Pressure</td>
+                        <td>00:80:00:00 00:00:09 BL</td>
+                        <td>23.61°C</td>
+                        <td>10.2</td>
+                        <td>-103</td>
+                        <td>5770.65°C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table-data-bottom">
+                  <div class="table-data-bottom-left">
+                    <p></p>
+                  </div>
+                  <div class="table-data-bottom-right">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main body  -->
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
